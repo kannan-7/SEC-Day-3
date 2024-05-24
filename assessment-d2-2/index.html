@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assesment Day 2</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      header {
+        position: relative;
+        height: 80px;
+      }
+
+      header > .child1 {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        padding: 20px;
+        margin-left: 30px;
+        background-color: darkgray;
+      }
+
+      header > .child2 {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%);
+      }
+
+      header > .child3 {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        padding-right: 30px;
+      }
+      footer {
+        position: relative;
+        height: 200px;
+      }
+      footer > .child1 {
+        position: absolute;
+        left: 50%;
+        top: 30%;
+        transform: translateX(-50%);
+      }
+
+      #section2 {
+        height: 400px;
+        background-color: darkgray;
+        position: relative;
+      }
+
+      #section2 > p {
+        /* background-color: green;  */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        /* transform: translateX(-50%) translateY(-50%) */
+        transform: translate(-50%, -50%); /* shorthand */
+      }
+      #section3 {
+        position: relative;
+        height: 200px;
+      }
+      #section3 > .child1 {
+        position: absolute;
+        left: 0;
+        width: 50%;
+        height: 200px;
+      }
+      #section3 > .child1 > .box {
+        width: 80%;
+        height: 80%;
+        background-color: darkgray;
+        margin: 20px;
+      }
+      #section3 > .child2 {
+        position: absolute;
+        right: 0;
+        width: 50%;
+        height: 200px;
+      }
+      #section2 > .child2 > p {
+        margin: 20px;
+      }
+      #section4 {
+        position: relative;
+        height: 200px;
+      }
+      #section4 > .child1 {
+        position: absolute;
+        left: 0;
+        width: 50%;
+        height: 200px;
+      }
+      #section4 > .child2 {
+        position: absolute;
+        right: 0;
+        width: 50%;
+        height: 200px;
+      }
+      #section4 > .child2 > .box {
+        width: 80%;
+        height: 80%;
+        background-color: darkgray;
+        margin: 20px;
+      }
+      #section3 > .child2 > p {
+        padding: 20px;
+      }
+      #section4 > .child1 > p {
+        padding: 20px;
+      }
+      #section5 > .child2 {
+        position: absolute;
+        right: 0;
+        width: 60%;
+        height: 20px;
+      }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Section 5 kali kena guna div*5 -->
+    <header>
+      <div class="child1">Logo</div>
+      <div class="child2">
+        <span style="padding-right: 20px">HOME</span>
+        <span style="padding-right: 20px">ABOUT</span>
+        <span style="padding-right: 20px">DESTINATIONS</span>
+        <span style="padding-right: 20px">GALLERY</span>
+      </div>
+      <div class="child3">
+        <img src="./Assets/Megnifiying-glass.svg" alt="Search icon" />
+      </div>
+    </header>
+    <!-- Section 2 -->
+    <section id="section2">
+      <p>Master Slider</p>
+    </section>
+    <!-- section 3 -->
+    <section id="section3">
+      <div class="child1">
+        <div class="box"></div>
+      </div>
+      <div class="child2">
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam
+          delectus ut est voluptatibus! Quae maxime error assumenda eum cum. Ab,
+          quae impedit officiis aliquid facere quos tenetur cupiditate
+          exercitationem laboriosam debitis voluptate ullam quasi cum hic ea
+          natus expedita. Tenetur voluptatum architecto quis maiores voluptas,
+          dolore accusantium? Ea, inventore. Velit, mollitia repellat harum
+          temporibus expedita ut perspiciatis voluptate error delectus
+          perferendis libero animi qui corporis sint et voluptatibus a nesciunt?
+          Blanditiis, soluta libero enim tenetur recusandae unde quos veniam
+          harum labore animi.
+        </p>
+      </div>
+    </section>
+
+    <!-- section 4 -->
+    <section id="section4">
+      <div class="child1">
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid
+          accusantium voluptatem quis ex! Suscipit nesciunt fugiat quisquam
+          neque molestias facere unde a quis? Quae, minima sunt nemo dignissimos
+          saepe dicta nostrum sed natus assumenda laboriosam, porro delectus
+          tempore! Ad ducimus aut quidem iste repellat, fugit nobis? Sit
+          recusandae ipsam possimus ipsa ut minus pariatur a quae vel beatae,
+          voluptatibus aliquid iure aliquam dignissimos iusto quod quo totam
+          rerum asperiores numquam sint alias eius cumque libero. Quidem dolorem
+          optio dignissimos 
+        </p>
+      </div>
+      <div class="child2">
+        <div class="box"></div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="child1">
+        <span style="padding-right: 40px">
+          <img src="./Assets/FB.svg" alt="FB icon" />
+        </span>
+        <span style="padding-right: 40px">
+          <img src="./Assets/instagram.svg" alt="instagram icon" />
+        </span>
+        <span style="padding-right: 40px">
+          <img src="./Assets/pinterest.svg" alt="pinterest icon" />
+        </span>
+        <span style="padding-right: 40px">
+          <img src="./Assets/twitter.svg" alt="twitter icon" />
+        </span>
+        <span style="padding-right: 40px">
+          <img src="./Assets/Youtube.svg" alt="Youtube icon" />
+        </span>
+      </div>
+      
+    </footer>
+    <section id="section5">
+    <div class="child2">
+      <span>
+        <img src="./Assets/Copyright.svg" alt="Copyright icon" />
+      </span>
+        <span style="padding-left: 20px">2021 - All right reserved</span>
+      </span>
+    </div>
+  </section>
+  </body>
+</html>
